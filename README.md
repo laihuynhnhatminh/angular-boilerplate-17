@@ -13,6 +13,20 @@ docker compose up
 docker compose watch
 ```
 
+## Linter
+
+This project use Eslint and Eslint-Prettier as the base linter. You can run a manual lint with this command
+
+```bash
+ng lint
+```
+
+## Github Action Workflows
+
+Apply on during main branch push and pull request to main branch. By default your repository will not have sufficient permission to run the actions.
+In order to grant these permission yout need to go to Setting -> Actions -> General.
+There is a sections where you can grant `Read and write permissions` and `Allow GitHub Actions to create and approve pull requests` permissions.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
