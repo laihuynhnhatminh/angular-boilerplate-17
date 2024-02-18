@@ -21,7 +21,6 @@ This project use Eslint and Eslint-Prettier as the base linter. You can run a ma
 ng lint
 ```
 
-
 ## Github Action Workflows
 
 Apply on during main branch push and pull request to main branch. By default your repository will not have sufficient permission to run the actions.
