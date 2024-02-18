@@ -1,6 +1,7 @@
-# AngularBoilerplate17
+# Angular 17 Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+This is a template for an Angular project quickstart
+Project structure is based on SCAM pattern (Single Component Angular Module)
 
 ## Development server
 
@@ -9,7 +10,6 @@ Hot reload upon code changes.
 Hot rebuild upon package file and angular.json file changes.
 
 ```bash
-docker compose up
 docker compose watch
 ```
 
