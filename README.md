@@ -4,7 +4,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Everything is setted up to develop in docker environment to make sure everything will be inside a container.
+Hot reload upon code changes.
+Hot rebuild upon package file and angular.json file changes.
+
+```bash
+docker compose up
+docker compose watch
+```
 
 ## Code scaffolding
 

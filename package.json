@@ -1,5 +1,7 @@
 {
   "name": "angular-boilerplate-17",
+  "description": "Angular 17 boilerplate template",
+  "author": "Himemiya Taiyou/Lai Huynh Nhat Minh <nhatminhwork1996@gmail.com>",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
