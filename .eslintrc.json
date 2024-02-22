@@ -27,6 +27,33 @@
             "prefix": "app",
             "style": "kebab-case"
           }
+        ],
+        "@typescript-eslint/explicit-function-return-type": [
+          "warn",
+          {
+            "allowExpressions": true,
+            "allowTypedFunctionExpressions": true,
+            "allowHigherOrderFunctions": true
+          }
+        ],
+        "@typescript-eslint/member-ordering": [
+          "error",
+          { "interfaces": ["signature", "method", "constructor", "field"] }
+        ],
+        "@typescript-eslint/explicit-member-accessibility": [
+          "error",
+          {
+            "accessibility": "explicit",
+            "overrides": {
+              "constructors": "no-public"
+            }
+          }
+        ],
+        "@typescript-eslint/require-await": [
+          "error"
+        ],
+        "@typescript-eslint/no-floating-promises": [
+          "error"
         ]
       }
     },
