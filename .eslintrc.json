@@ -51,8 +51,15 @@
             }
           }
         ],
-        "@typescript-eslint/require-await": "error",
-        "@typescript-eslint/no-floating-promises": "error"
+        "@typescript-eslint/require-await": [
+          "error"
+        ],
+        "@typescript-eslint/no-floating-promises": [
+          "error"
+        ]
+      },
+      "parserOptions": {
+        "project": ["tsconfig.json"]
       }
     },
     {
