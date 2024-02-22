@@ -38,7 +38,9 @@
         ],
         "@typescript-eslint/member-ordering": [
           "error",
-          { "interfaces": ["signature", "method", "constructor", "field"] }
+          {
+            "interfaces": ["signature", "method", "constructor", "field"]
+          }
         ],
         "@typescript-eslint/explicit-member-accessibility": [
           "error",
@@ -49,12 +51,8 @@
             }
           }
         ],
-        "@typescript-eslint/require-await": [
-          "error"
-        ],
-        "@typescript-eslint/no-floating-promises": [
-          "error"
-        ]
+        "@typescript-eslint/require-await": "error",
+        "@typescript-eslint/no-floating-promises": "error"
       }
     },
     {
