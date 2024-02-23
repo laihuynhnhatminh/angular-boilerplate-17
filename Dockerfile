@@ -3,11 +3,12 @@ FROM node:20-alpine
 WORKDIR /src
 
 COPY package*.json ./
+COPY yarn.lock ./
 
-RUN npm install
+RUN yarn
 
 COPY . .
 
 EXPOSE 4200
 
-CMD npm start
+CMD yarn start
