@@ -8,7 +8,7 @@ export class AuthService {
     !!storage.getItem('appSession')
   );
 
-  get isAuthenticated(): boolean {
+  public get isAuthenticated(): boolean {
     return this.isAuthenticated$.getValue();
   }
 

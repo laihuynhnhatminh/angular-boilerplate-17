@@ -26,6 +26,8 @@ export const serverErrorInterceptor: HttpInterceptorFn = (request, next) => {
           error.status
         )
       ) {
+        // TODO: To test if void is needed instead of eslint-disable-next-line
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
         router.navigateByUrl('/auth/login');
       }
 
