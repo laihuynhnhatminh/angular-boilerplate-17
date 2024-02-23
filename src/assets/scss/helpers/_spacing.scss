@@ -1,0 +1,160 @@
+// Generate margin and padding by px
+@for $size from 1 to 101 {
+    .m-#{$size}px {
+        margin: $size * 1px !important;
+    }
+
+    .ml-#{$size}px {
+        margin-left: $size * 1px !important;
+    }
+
+    .mt-#{$size}px {
+        margin-top: $size * 1px !important;
+    }
+
+    .mb-#{$size}px {
+        margin-bottom: $size * 1px !important;
+    }
+
+    .mr-#{$size}px {
+        margin-right: $size * 1px !important;
+    }
+
+    .mx-#{$size}px {
+        margin-right: $size * 1px !important;
+        margin-left: $size * 1px !important;
+    }
+
+    .my-#{$size}px {
+        margin-top: $size * 1px !important;
+        margin-bottom: $size * 1px !important;
+    }
+
+    // Generate padding
+    .p-#{$size}px {
+        padding: $size * 1px !important;
+    }
+
+    .pl-#{$size}px {
+        padding-left: $size * 1px !important;
+    }
+
+    .pt-#{$size}px {
+        padding-top: $size * 1px !important;
+    }
+
+    .pb-#{$size}px {
+        padding-bottom: $size * 1px !important;
+    }
+
+    .pr-#{$size}px {
+        padding-right: $size * 1px !important;
+    }
+
+    .px-#{$size}px {
+        padding-right: $size * 1px !important;
+        padding-left: $size * 1px !important;
+    }
+
+    .py-#{$size}px {
+        padding-top: $size * 1px !important;
+        padding-bottom: $size * 1px !important;
+    }
+}
+
+
+// flex gap
+.flex-gap {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    &-0 {
+        gap: 0 !important;
+    }
+
+    &-1 {
+        gap: 0.25rem;
+    }
+
+    &-2 {
+        gap: 0.5rem;
+    }
+
+    &-3 {
+        gap: 1rem;
+    }
+
+    &-4 {
+        gap: 1.5rem;
+    }
+
+    &-5 {
+        gap: 3rem;
+    }
+}
+
+
+@for $size from 1 to 101 {
+    .flex-gap-#{$size}px {
+        gap: $size * 1px;
+    }
+
+    // flex basics
+    .flex-basis-#{$size} {
+        flex-basis: $size * 1%;
+    }
+
+    .flex-gap {
+        $number_of_element: 100 / #{$size};
+
+        &-1 {
+            $gap: 0.25rem;
+
+            .flex-basis-#{$size} {
+                flex-basis: calc((100% - (#{$number_of_element} - 1) * #{$gap}) / (#{$number_of_element}));
+            }
+        }
+
+        &-2 {
+            $gap: 0.5rem;
+
+            .flex-basis-#{$size} {
+                flex-basis: calc((100% - (#{$number_of_element} - 1) * #{$gap}) / (#{$number_of_element}));
+            }
+        }
+
+        &-3 {
+            $gap: 1rem;
+
+            .flex-basis-#{$size} {
+                flex-basis: calc((100% - (#{$number_of_element} - 1) * #{$gap}) / (#{$number_of_element}));
+            }
+        }
+
+        &-4 {
+            $gap: 1.5rem;
+
+            .flex-basis-#{$size} {
+                flex-basis: calc((100% - (#{$number_of_element} - 1) * #{$gap}) / (#{$number_of_element}));
+            }
+        }
+
+        &-5 {
+            $gap: 3rem;
+
+            .flex-basis-#{$size} {
+                flex-basis: calc((100% - (#{$number_of_element} - 1) * #{$gap}) / (#{$number_of_element}));
+            }
+        }
+    }
+}
+
+.flex-basis {
+    &-0 {
+        flex-basis: 0;
+    }
+
+    &-auto {
+        flex-basis: auto;
+    }
+}

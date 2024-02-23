@@ -10,6 +10,7 @@ Hot reload upon code changes.
 Hot rebuild upon package file and angular.json file changes.
 
 ```bash
+docker compose up
 docker compose watch
 ```
 

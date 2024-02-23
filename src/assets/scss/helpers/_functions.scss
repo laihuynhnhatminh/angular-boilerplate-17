@@ -1,0 +1,6 @@
+@use "sass:math";
+
+// Generate font size by rem (16px ~ 1rem)
+@function rem($px) {
+    @return math.div($px, 16) * 1rem;
+}

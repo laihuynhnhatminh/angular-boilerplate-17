@@ -1,0 +1,9 @@
+@import "./scss/layout";
+@import "./scss/variables";
+@import "./scss/custom";
+@import "./scss/helpers";
+@import "./scss/common";
+
+body {
+    background-color: $white;
+}

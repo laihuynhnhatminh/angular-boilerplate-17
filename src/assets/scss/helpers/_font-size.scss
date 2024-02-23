@@ -1,0 +1,8 @@
+@import './functions';
+
+// Not necessary to be used, alternative to setting default font size
+@for $size from 1 to 101 {
+    .font-size-#{$size}px {
+        font-size: rem($size) !important;
+    }
+}
