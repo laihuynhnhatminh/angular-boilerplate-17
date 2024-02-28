@@ -5,6 +5,12 @@ Project structure is based on SCAM pattern (Single Component Angular Module)
 
 ## Development server
 
+Installing all library for the app
+
+```bash
+yarn
+```
+
 Everything is setted up to develop in docker environment to make sure everything will be inside a container.
 Hot reload upon code changes.
 Hot rebuild upon package file and angular.json file changes.
@@ -27,6 +33,23 @@ ng lint
 Apply on during main branch push and pull request to main branch. By default your repository will not have sufficient permission to run the actions.
 In order to grant these permission yout need to go to Setting -> Actions -> General.
 There is a sections where you can grant `Read and write permissions` and `Allow GitHub Actions to create and approve pull requests` permissions.
+
+## Enable auto-deployment on merge
+
+In order to run an auto-deploy on merge feature you can uncomment the commented lines inside `filebase-hosting-merge.yml` file.
+Then run these commands:
+
+```bash
+yarn build:prod
+node_modules/.bin/firebase login
+node_modules/.bin/firebase init hosting
+```
+
+Notes during firebase init:
+- Public directory: dist/project-name/browser
+- Single-page application: Yes - unless you want to do ssr and other style of app
+- Github action: Can auto-setup here or later by running `node_modules/.bin/firebase init hosting:github`
+- Overwrite the index.html file: No
 
 ## Code scaffolding
 
