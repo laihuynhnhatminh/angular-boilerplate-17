@@ -46,6 +46,7 @@ node_modules/.bin/firebase init hosting
 ```
 
 Notes during firebase init:
+
 - Public directory: dist/project-name/browser
 - Single-page application: Yes - unless you want to do ssr and other style of app
 - Github action: Can auto-setup here or later by running `node_modules/.bin/firebase init hosting:github`
