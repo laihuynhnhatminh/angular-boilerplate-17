@@ -7,7 +7,11 @@
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "build:prod": "ng build --configuration production --aot",
+    "deploy": "node_modules/.bin/firebase deploy --only hosting",
+    "deploy:stage": "node_modules/.bin/firebase hosting:channel:deploy stage --expires 2d",
+    "deploy:remove-stage": "node_modules/.bin/firebase hosting:channel:delete stage",
+    "deploy:list": "node_modules/.bin/firebase hosting:channel:list",
     "test": "ng test",
     "lint": "ng lint"
   },
