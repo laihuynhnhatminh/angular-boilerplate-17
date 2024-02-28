@@ -28,7 +28,6 @@ jobs:
         with:
           node-version: 20
 
-      # ESLint and Prettier must be in `package.json`
       - name: Install Node.js dependencies
         run: npm install
 
@@ -40,7 +39,6 @@ jobs:
           eslint_extensions: ts
   build:
     name: Build and preview
-    if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
