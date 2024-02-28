@@ -37,11 +37,11 @@ jobs:
         with:
           eslint: true
           prettier: true
-          eslint_extensions: ts 
+          eslint_extensions: ts
   build:
-      name: Build and preview
-      if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v4
-        - run: npm ci && npm run build:prod
+    name: Build and preview
+    if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci && npm run build:prod
