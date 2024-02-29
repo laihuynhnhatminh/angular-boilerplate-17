@@ -1,6 +1,10 @@
 ## Getting start
 
-This is a template for an Angular project quickstart.
+This is a template for an Angular project quick start.
+
+It is for my personal use however one, anyone can try and use it if you want it too.
+
+Any issues to improve the template is welcome.
 
 Project structure is based on SCAM pattern (Single Component Angular Module).
 
