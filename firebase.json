@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/angular-boilerplate-17/browser",
+    "public": "dist/your-project-name/browser",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
