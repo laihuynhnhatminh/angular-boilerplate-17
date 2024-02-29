@@ -1,5 +1,6 @@
 import { inject } from '@angular/core';
-import { CanMatchFn, Route, Router, UrlSegment } from '@angular/router';
+import type { CanMatchFn, Route, UrlSegment } from '@angular/router';
+import { Router } from '@angular/router';
 import { AuthService } from '@core/services';
 
 type AuthGuardOptions = {
@@ -19,7 +20,7 @@ const defaultAuthGuardOptions = (): AuthGuardOptions => ({
  * @returns A function that acts as an Angular route guard.
  *
  * @example
- * import { authGuard } from '@lib/guards';
+ * import { authGuard } from '@core/guards';
  *
  * const routes: Routes = [
  *   {
@@ -30,7 +31,7 @@ const defaultAuthGuardOptions = (): AuthGuardOptions => ({
  * ];
  *
  * @example
- * import { authGuard } from '@lib/guards';
+ * import { authGuard } from '@core/guards';
  *
  * const routes: Routes = [
  *   {

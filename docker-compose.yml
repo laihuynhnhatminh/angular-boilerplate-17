@@ -13,6 +13,8 @@ services:
           action: rebuild
         - path: ./package-lock.json
           action: rebuild
+        - path: ./yarn.lock
+          action: rebuild
         - path: ./angular.json
           action: rebuild
         - path: ./
