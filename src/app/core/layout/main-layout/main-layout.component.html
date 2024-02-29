@@ -1,4 +1,11 @@
-<app-header></app-header>
-<app-side-bar></app-side-bar>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div class="layout-wrapper">
+  <header class="layout-wrapper__header">
+    <app-header></app-header>
+  </header>
+  <article class="layout-wrapper__content">
+    <router-outlet></router-outlet>
+  </article>
+  <footer class="layout-wrapper__footer">
+    <app-footer></app-footer>
+  </footer>
+</div>

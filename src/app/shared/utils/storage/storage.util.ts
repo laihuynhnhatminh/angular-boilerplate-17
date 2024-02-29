@@ -1,4 +1,4 @@
-import { StorageObjectData, StorageObjectType } from './storage.type';
+import type { StorageObjectData, StorageObjectType } from './storage.type';
 
 type StorageOptions = {
   api: 'LocalStorage' | 'SessionStorage';

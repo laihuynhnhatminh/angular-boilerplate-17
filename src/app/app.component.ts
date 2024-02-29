@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
+import { APP_CONFIG, type AppConfig } from './app.config';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +11,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  constructor() {
-    console.log('App component created');
+  constructor(@Inject(APP_CONFIG) public config: AppConfig) {
+    console.log(
+      `App component created in ${config.production ? 'production' : 'development'} environment`
+    );
   }
 }

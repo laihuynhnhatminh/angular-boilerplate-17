@@ -1,4 +1,4 @@
-import { HttpInterceptorFn } from '@angular/common/http';
+import type { HttpInterceptorFn } from '@angular/common/http';
 import { storage } from '@shared/utils';
 
 export const jwtInterceptor: HttpInterceptorFn = (request, next) => {

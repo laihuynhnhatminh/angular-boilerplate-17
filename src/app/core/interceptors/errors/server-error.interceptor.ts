@@ -1,8 +1,8 @@
-import {
+import type {
   HttpErrorResponse,
   HttpInterceptorFn,
-  HttpStatusCode,
 } from '@angular/common/http';
+import { HttpStatusCode } from '@angular/common/http';
 import { inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { catchError, throwError } from 'rxjs';

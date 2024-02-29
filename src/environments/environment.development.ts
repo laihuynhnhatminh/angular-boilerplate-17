@@ -1,4 +1,6 @@
-export const APP_ENV = {
+import type { AppConfig } from '../app/app.config';
+
+export const APP_ENV: AppConfig = {
   production: false,
-  baseUrl: 'http://localhost:3000',
+  apiBaseUrl: 'http://localhost:3000',
 };
