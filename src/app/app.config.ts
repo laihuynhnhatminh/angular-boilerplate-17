@@ -12,13 +12,11 @@ export interface AppConfig {
   apiBaseUrl: string;
 }
 
-const APP_CONFIG = new InjectionToken<AppConfig>('APP_CONFIG');
+export const APP_CONFIG = new InjectionToken<AppConfig>('APP_CONFIG');
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    // Routers
     provideRouter(routes),
-    // Http Client Providers
     provideHttpClient(
       withInterceptors([jwtInterceptor, serverErrorInterceptor])
     ),
