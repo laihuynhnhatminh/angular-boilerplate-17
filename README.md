@@ -9,6 +9,7 @@ Any issues to improve the template is welcome.
 Project structure is based on SCAM pattern (Single Component Angular Module).
 
 ### Checklist:
+
 - [ ] Update project name
 - [ ] Update package.json author, email and descriptions
 - [ ] Update angular.json outputFile angular-boilerplate-17 with the name of your project
@@ -26,8 +27,9 @@ yarn
 ```
 
 Everything is setted up to develop in docker environment to make sure everything will be inside a container.
- * Hot reload upon code changes.
- * Hot rebuild upon package file and angular.json file changes.
+
+- Hot reload upon code changes.
+- Hot rebuild upon package file and angular.json file changes.
 
 ```bash
 docker compose up
@@ -52,17 +54,17 @@ yarn build:prod
 
 ## Github Action Workflows
 
->Apply on during main branch push and pull request to main branch. By default your repository will not have sufficient permission to run the actions.
+> Apply on during main branch push and pull request to main branch. By default your repository will not have sufficient permission to run the actions.
 >
->In order to grant these permission yout need to go to Setting -> Actions -> General.
+> In order to grant these permission yout need to go to Setting -> Actions -> General.
 >
->There is a sections where you can grant `Read and write permissions` and `Allow GitHub Actions to create and approve pull requests` permissions.
+> There is a sections where you can grant `Read and write permissions` and `Allow GitHub Actions to create and approve pull requests` permissions.
 
 ## Enable auto-deployment on merge
 
->In order to run an auto-deploy on merge feature you can uncomment the commented lines inside `filebase-hosting-merge.yml` file.
+> In order to run an auto-deploy on merge feature you can uncomment the commented lines inside `filebase-hosting-merge.yml` file.
 
->Although you can modify the `firebase.json` and `.firebaserc`, I suggest on re-init firebase to let them create a Oauth link between firebase - github for a quick start on auto deployment.
+> Although you can modify the `firebase.json` and `.firebaserc`, I suggest on re-init firebase to let them create a Oauth link between firebase - github for a quick start on auto deployment.
 
 ```bash
 yarn build:prod
