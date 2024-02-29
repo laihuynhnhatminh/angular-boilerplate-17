@@ -1,16 +1,17 @@
-# Getting start
+## Getting start
 
-This is a template for an Angular project quickstart
-Project structure is based on SCAM pattern (Single Component Angular Module)
+This is a template for an Angular project quickstart.
 
-Checklist:
-[] Update project name
-[] Update package.json author, email and descriptions
-[] Update angular.json outputFile angular-boilerplate-17 with the name of your project
-[] Update index.html to your project name/web app name
-[] Update firebase.json and .firebaserc or re-init through `yarn firebase init hosting` command
-[] Update this README.md file
-[] Clean up everything you need to
+Project structure is based on SCAM pattern (Single Component Angular Module).
+
+### Checklist:
+- [ ] Update project name
+- [ ] Update package.json author, email and descriptions
+- [ ] Update angular.json outputFile angular-boilerplate-17 with the name of your project
+- [ ] Update index.html to your project name/web app name
+- [ ] Update firebase.json and .firebaserc or re-init through `yarn firebase init hosting` command
+- [ ] Update this README.md file
+- [ ] Clean up everything you need to
 
 ## Development server
 
@@ -21,8 +22,8 @@ yarn
 ```
 
 Everything is setted up to develop in docker environment to make sure everything will be inside a container.
-Hot reload upon code changes.
-Hot rebuild upon package file and angular.json file changes.
+ * Hot reload upon code changes.
+ * Hot rebuild upon package file and angular.json file changes.
 
 ```bash
 docker compose up
@@ -37,15 +38,26 @@ This project use Eslint and Eslint-Prettier as the base linter. You can run a ma
 ng lint
 ```
 
+## Build
+
+Before deploying or push code to github. Build the app to check for error.
+
+```bash
+yarn build:prod
+```
+
 ## Github Action Workflows
 
 Apply on during main branch push and pull request to main branch. By default your repository will not have sufficient permission to run the actions.
+
 In order to grant these permission yout need to go to Setting -> Actions -> General.
+
 There is a sections where you can grant `Read and write permissions` and `Allow GitHub Actions to create and approve pull requests` permissions.
 
 ## Enable auto-deployment on merge
 
 In order to run an auto-deploy on merge feature you can uncomment the commented lines inside `filebase-hosting-merge.yml` file.
+
 Although you can modify the `firebase.json` and `.firebaserc`, I suggest on re-init firebase to let them create a Oauth link between firebase - github for a quick start on auto deployment.
 
 ```bash
