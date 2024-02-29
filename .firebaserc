@@ -1,5 +1,5 @@
 {
   "projects": {
-    "default": "angular-autodeployment"
+    "default": "your-firebase-app-name"
   }
 }

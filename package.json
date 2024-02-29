@@ -2,13 +2,14 @@
   "name": "angular-boilerplate-17",
   "description": "Angular 17 boilerplate template",
   "author": "Himemiya Taiyou/Lai Huynh Nhat Minh <nhatminhwork1996@gmail.com>",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0",
     "build": "ng build",
     "build:prod": "ng build --configuration production --aot",
-    "deploy": "node_modules/.bin/firebase deploy --only hosting",
+    "firebase": "node_modules/.bin/firebase",
+    "firebase:deploy": "npm run build:prod && firebase deploy --only hosting",
     "test": "ng test",
     "lint": "ng lint"
   },
